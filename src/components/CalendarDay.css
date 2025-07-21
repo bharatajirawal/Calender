@@ -1,0 +1,99 @@
+.calendar-day {
+  background: white;
+  min-height: 100px;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.calendar-day:hover {
+  background: #f9fafb;
+}
+
+.calendar-day.other-month {
+  background: #f8fafc;
+  color: #9ca3af;
+}
+
+.calendar-day.today {
+  background: #eff6ff;
+}
+
+.calendar-day.today .day-number {
+  background: #3b82f6;
+  color: white;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendar-day.drag-over {
+  background: #dbeafe;
+  border: 2px dashed #3b82f6;
+}
+
+.day-number {
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+  color: #374151;
+  flex-shrink: 0;
+}
+
+.day-events {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+  overflow: hidden;
+}
+
+.more-events {
+  font-size: 0.75rem;
+  color: #6b7280;
+  padding: 2px 4px;
+  text-align: center;
+  background: #f3f4f6;
+  border-radius: 3px;
+  margin-top: 2px;
+}
+
+@media (max-width: 768px) {
+  .calendar-day {
+    min-height: 80px;
+    padding: 0.25rem;
+  }
+  
+  .day-number {
+    font-size: 0.75rem;
+    margin-bottom: 0.25rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .calendar-day {
+    min-height: 120px;
+    padding: 0.75rem;
+  }
+  
+  .day-number {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .calendar-day {
+    min-height: 140px;
+    padding: 1rem;
+  }
+}
+
+

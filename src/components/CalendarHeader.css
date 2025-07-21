@@ -1,0 +1,71 @@
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  background: #f8fafc;
+  border-bottom: 1px solid #e5e7eb;
+  flex-shrink: 0;
+}
+
+.nav-button {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.nav-button:hover {
+  background: #2563eb;
+}
+
+.month-year {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.month-year h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.today-button {
+  background: #10b981;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.today-button:hover {
+  background: #059669;
+}
+
+@media (max-width: 768px) {
+  .calendar-header {
+    padding: 1rem;
+  }
+  
+  .month-year {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .month-year h2 {
+    font-size: 1.25rem;
+  }
+}

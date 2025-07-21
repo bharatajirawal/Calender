@@ -1,0 +1,27 @@
+.calendar {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .calendar {
+    border-radius: 4px;
+    height: calc(100vh - 100px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .calendar {
+    height: calc(100vh - 140px);
+  }
+}
+
+
+

@@ -1,0 +1,39 @@
+.event-item {
+  background: #3b82f6;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  margin-bottom: 1px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.event-item:hover {
+  opacity: 0.8;
+}
+
+.event-title {
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.event-time {
+  font-size: 0.625rem;
+  opacity: 0.9;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .event-item {
+    font-size: 0.625rem;
+    padding: 1px 4px;
+  }
+  
+  .event-time {
+    display: none;
+  }
+}
